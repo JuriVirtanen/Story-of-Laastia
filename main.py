@@ -1,3 +1,5 @@
+from mapa import *
+
 class Hero:
 
     def __init__(self, name, speed, atk, df, hp, magic_power, luck, xp, schools):
@@ -64,12 +66,9 @@ class Item:
         self.magic_power = magic_power
         self.luck = luck
 
-map = [[],[],[],[],[]]
-
 
 example1 = Hero("Guy", 6, 24, 24, 150, 10, 2, 0, "Woda")
 example_item = Item("Afganit", atk = 10)
 example_weapon = Weapon("Sztylet", atk = 1)
 example1.take_item(example_item)
 example1.take_weapon(example_weapon)
-example1.show_stats()
