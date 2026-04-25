@@ -64,6 +64,9 @@ class Item:
         self.magic_power = magic_power
         self.luck = luck
 
+map = [[],[],[],[],[]]
+
+
 example1 = Hero("Guy", 6, 24, 24, 150, 10, 2, 0, "Woda")
 example_item = Item("Afganit", atk = 10)
 example_weapon = Weapon("Sztylet", atk = 1)
