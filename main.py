@@ -1,16 +1,15 @@
 import pygame
 import os
+from mapa import *
 
 pygame.init()
-win = pygame.display.set_mode((900, 500))
+win = pygame.display.set_mode((950, 580))
 pygame.display.set_caption("Story of Laastia")
 
-kratka = pygame.image.load("frame.png")
-kratkalo = pygame.transform.scale(kratka, (100, 100))
-
-def draw():
-    win.blit(kratkalo, (0, 0))
-    pygame.display.update()
+background = pygame.image.load(os.path.join('Assets', 'background2.png'))
+win.blit(background,(0,0))
+pygame.display.update()
+a = Battlefield()
 
 def main():
     run = True
@@ -18,7 +17,7 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
-        draw()
+        a.draw(win)
     pygame.quit()
 
 if __name__ == "__main__":

@@ -1,0 +1,3 @@
+Dodanie klasy która łatwo wysyła dane do Tile
+Obrazki przypisane do tych klas
+eventy klikania
